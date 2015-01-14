@@ -1,6 +1,6 @@
 $(document).ready(function(){
 var $main = $('main');
-$main.html('');
+$main.html('<p>All Tweets</p>');
 
 var index = streams.home.length - 1;
 while(index >= 0){

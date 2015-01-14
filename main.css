@@ -8,12 +8,15 @@ body {
 	margin: 0;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background: linear-gradient(180deg, #BBBBBB, #BBBBBB);
+	background: linear-gradient(0deg, #000000, #888888);
 }
 
 main {
 	width: 30%;
 	margin: 0px auto 0px auto;
+}
+main p {
+	text-align: center;
 }
 
 main div {
@@ -29,8 +32,13 @@ main div:hover {
 
 }
 
+aside {
+	float: left;
+	width: 30%;
+}
+
 article {
-	width: 30%
+	display: inline-block;
 }
 
 article p {
