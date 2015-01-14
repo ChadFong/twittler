@@ -26,6 +26,7 @@ main div {
 
 main div:hover {
 	opacity: 1.0;
+
 }
 
 article {
@@ -34,6 +35,11 @@ article {
 
 article p {
 	text-align: center;
+}
+
+.time {
+	display: inline;
+	font-size: 0.75em;
 }
 
 article div {

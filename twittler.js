@@ -8,6 +8,12 @@ while(index >= 0){
   var $tweet = $('<div></div>');
   $tweet.text('@' + tweet.user + ': ' + tweet.message);
   $tweet.attr('id', tweet.user);
+  /*
+  var time = timeCal(tweet.created_at);
+  var $time = $('<p class="time"></p>');
+  $time.text(time);
+  $tweet.append($time);
+  */
   $tweet.appendTo($main);
   index -= 1;
 }
@@ -19,10 +25,30 @@ var tweetReader = function(user) {
 	while(tweetNum >= 0) {
 		var tweet = user[tweetNum];
 		var $tweet = $('<div></div>');
-		$tweet.text('@' + tweet.user + ': ' + tweet.message);
+
+
+		$tweet.text('@' + tweet.user + ': ' + tweet.message)
+		
+		var time = timeCal(tweet.created_at);
+		var $time = $('<p class="time"></p>');
+
+		$time.text(time);
+		
+		$tweet.append($time);
+		
 		$tweet.appendTo($('.userTweets'))
 		tweetNum -= 1;
 	}
+}
+
+var timeCal = function(start) {
+	var end = Date.now();
+	var elapsed = end - start;
+	var hours = Math.floor(elapsed/36e5);
+	var mins = Math.floor((elapsed % 36e5) / 6e4);
+	var secs = Math.floor((elapsed % 6e4) / 1000);
+	var string = "  Posted " + hours + ":" + mins + ":" + secs + " ago";
+	return string;
 }
 
 
