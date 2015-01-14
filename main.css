@@ -1,0 +1,46 @@
+html {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	height: 100%;
+	margin: 0;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background: linear-gradient(180deg, #BBBBBB, #BBBBBB);
+}
+
+main {
+	width: 30%;
+	margin: 0px auto 0px auto;
+}
+
+main div {
+	border-style: outset;
+	background-color: #DDDDDD;
+	padding: 1%;
+	margin: 2%;
+	opacity: 0.6;
+}
+
+main div:hover {
+	opacity: 1.0;
+}
+
+article {
+	width: 30%
+}
+
+article p {
+	text-align: center;
+}
+
+article div {
+	border-style: inset;
+	float: left;
+	width: 100%;
+	background-color: #AAAAAA;
+	padding: 1%;
+	margin: 2%;
+}
