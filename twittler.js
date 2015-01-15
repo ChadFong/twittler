@@ -48,7 +48,7 @@ $('div').click(function() {
 });
 
 $(":button").click(function(){
-	$(this).remove();
+	makeTweet();
 });
 
 });
