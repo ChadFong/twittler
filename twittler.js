@@ -39,7 +39,7 @@ makeTweet();
 
 var test = $('<p>It worked!</p>');
 
-$('div').click(function() {
+$(document).on('click', 'div', function() {
 	var name = $(this).attr("id");
 	var userTweets = streams.users[name];
 	$(".userTweets").empty();

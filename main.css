@@ -1,14 +1,9 @@
 html {
 	height: 100%;
 	width: 100%;
-}
-
-body {
-	height: 100%;
-	margin: 0;
-	background-repeat: no-repeat;
+	position: static;
+	background: linear-gradient(0deg, #000000, #FFFFFF);
 	background-attachment: fixed;
-	background: linear-gradient(0deg, #000000, #888888);
 }
 
 main {
