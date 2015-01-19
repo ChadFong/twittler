@@ -1,6 +1,6 @@
 $(document).ready(function(){
 var $main = $('main');
-$main.html('<p class="title">All Tweets</p>');
+$('header').append('<p id="title">All Twits</p>');
 
 
 var makeTweet = function(user){
@@ -41,15 +41,15 @@ $(document).on('click', 'div', function() {
 	var name = $(this).attr("id");
 	var userTweets = streams.users[name];
 	$main.empty();
-	$main.append($("<p class='title'>" + name + "'s Tweets</p>"));
-	$('button').text('Show all Tweets!')
+	$('#title').text(name + "'s Twits");
+	$('button').text('Show all Twits!');
 	makeTweet(userTweets);
 });
 
 $(":button").click(function(){
 	$main.empty();
-	$main.append($("<p class='title'>All Tweets</p>"))
-	$('button').text('Refresh Tweets!')
+	$('#title').text("All Twits");
+	$('button').text('Refresh Twits!');
 	makeTweet();
 });
 
