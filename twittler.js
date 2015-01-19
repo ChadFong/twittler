@@ -7,7 +7,7 @@ var makeTweet = function(user){
 	if(user !== undefined) {
 		index = user.length-1;
 		var tweet = function(){return user[index];};
-		var location = $('.userTweets');
+		var location = $main;
 	}
 	else {
 		index = streams.home.length-1;
@@ -42,12 +42,14 @@ var test = $('<p>It worked!</p>');
 $(document).on('click', 'div', function() {
 	var name = $(this).attr("id");
 	var userTweets = streams.users[name];
-	$(".userTweets").empty();
-	$('.userTweets').append($("<p>" + name + "'s Tweets</p>"));
+	$main.empty();
+	$main.append($("<p>" + name + "'s Tweets</p>"));
 	makeTweet(userTweets);
 });
 
 $(":button").click(function(){
+	$main.empty();
+	$main.append($("<p>All Tweets</p>"))
 	makeTweet();
 });
 

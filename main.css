@@ -1,13 +1,13 @@
 html {
-	height: 100%;
-	width: 100%;
 	position: static;
-	background: linear-gradient(0deg, #000000, #FFFFFF);
+	background-image: url("images/Background_trees.jpg"), linear-gradient(0deg, #000000, #FFFFFF);
+	background-size: auto 100%;
+	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
 
 main {
-	width: 30%;
+	width: 80%;
 	margin: 0px auto 0px auto;
 }
 main p {
@@ -15,15 +15,15 @@ main p {
 }
 
 main div {
-	border-style: outset;
-	background-color: #DDDDDD;
+	background-color: #FFFFFF;
+	border: 1px solid black;
 	padding: 1%;
-	margin: 2%;
-	opacity: 0.6;
+	margin: 1px;
+	
 }
 
 main div:hover {
-	opacity: 1.0;
+	opacity: 0.4;
 
 }
 
@@ -42,6 +42,10 @@ article p {
 
 .time {
 	display: inline;
+	position: relative;
+	float: right;
+	top: 50%;
+	transform: translateY(-50%);
 	font-size: 0.75em;
 }
 
