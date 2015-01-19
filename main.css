@@ -6,12 +6,24 @@ html {
 	background-attachment: fixed;
 }
 
+header {
+
+}
+
 main {
 	width: 80%;
 	margin: 0px auto 0px auto;
 }
-main p {
+.title {
+	font-size: 2.3em;
 	text-align: center;
+	color: #FFFFFF;
+	text-shadow: 
+	3px 3px 0 #444,
+	-1px -1px 0 #000,
+	1px -1px 0 #000,
+	-1px 1px 0 #000,
+	1px 1px 0 #000;
 }
 
 main div {
@@ -23,7 +35,8 @@ main div {
 }
 
 main div:hover {
-	opacity: 0.4;
+	background-color: #888888;
+	color: #FFFFFF;
 
 }
 
